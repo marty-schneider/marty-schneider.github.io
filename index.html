@@ -11,7 +11,7 @@
     .container {max-width:900px;margin:0 auto;}
     .doc {margin:3rem 0;}
     .doc h2 {margin-bottom:.5rem;color:#2c3e50;}
-    iframe {width:100%;height:720px;border:1px solid #ddd;border-radius:8px;}
+    .pdf-embed {width:100%;height:720px;border:1px solid #ddd;border-radius:8px;display:block;}
     .download {text-align:center;margin-top:.5rem;}
     .download a {color:#3498db;text-decoration:none;}
     .download a:hover {text-decoration:underline;}
@@ -28,57 +28,51 @@
     <!-- 1 -->
     <div class="doc">
       <h2>Alerts to Adversaries - Capstone Report</h2>
-      <iframe src="/pdfjs/web/viewer.html?file=https://marty-schneider.github.io/assets/Alerts%20to%20Adversaries%20%2D%20Capstone%20Report.pdf&embedded=true#pagemode=none" allowfullscreen></iframe>
+      <embed src="assets/Alerts%20to%20Adversaries%20%2D%20Capstone%20Report.pdf" class="pdf-embed" type="application/pdf">
       <p class="download"><a href="assets/Alerts%20to%20Adversaries%20%2D%20Capstone%20Report.pdf" download>Download PDF</a></p>
     </div>
 
     <!-- 2 -->
     <div class="doc">
       <h2>CTI Scenario 3 Marty Schneider</h2>
-      <iframe src="/pdfjs/web/viewer.html?file=https://marty-schneider.github.io/assets/CTI%20Scenario%203%20Marty%20Schneider.pdf&embedded=true#pagemode=none" allowfullscreen></iframe>
+      <embed src="assets/CTI%20Scenario%203%20Marty%20Schneider.pdf" class="pdf-embed" type="application/pdf">
       <p class="download"><a href="assets/CTI%20Scenario%203%20Marty%20Schneider.pdf" download>Download PDF</a></p>
     </div>
 
     <!-- 3 -->
     <div class="doc">
       <h2>Group Log Analytics Challenge 2</h2>
-      <iframe src="/pdfjs/web/viewer.html?file=https://marty-schneider.github.io/assets/Group%20Log%20Analytics%20Challenge%202.pdf&embedded=true#pagemode=none" allowfullscreen></iframe>
+      <embed src="assets/Group%20Log%20Analytics%20Challenge%202.pdf" class="pdf-embed" type="application/pdf">
       <p class="download"><a href="assets/Group%20Log%20Analytics%20Challenge%202.pdf" download>Download PDF</a></p>
     </div>
 
     <!-- 4 -->
     <div class="doc">
       <h2>MyDoom CTI</h2>
-      <iframe src="/pdfjs/web/viewer.html?file=https://marty-schneider.github.io/assets/MyDoom%20CTI.pdf&embedded=true#pagemode=none" allowfullscreen></iframe>
+      <embed src="assets/MyDoom%20CTI.pdf" class="pdf-embed" type="application/pdf">
       <p class="download"><a href="assets/MyDoom%20CTI.pdf" download>Download PDF</a></p>
     </div>
 
     <!-- 5 -->
     <div class="doc">
       <h2>Network Challenge 1 Report Marty Schneider</h2>
-      <iframe src="/pdfjs/web/viewer.html?file=https://marty-schneider.github.io/assets/Network%20Challenge%201%20Report%20Marty%20Schneider.pdf&embedded=true#pagemode=none" allowfullscreen></iframe>
+      <embed src="assets/Network%20Challenge%201%20Report%20Marty%20Schneider.pdf" class="pdf-embed" type="application/pdf">
       <p class="download"><a href="assets/Network%20Challenge%201%20Report%20Marty%20Schneider.pdf" download>Download PDF</a></p>
     </div>
 
     <!-- 6 -->
     <div class="doc">
       <h2>SMB RCE Vuln Report</h2>
-      <iframe src="/pdfjs/web/viewer.html?file=https://marty-schneider.github.io/assets/SMB%20RCE%20Vuln%20Report.pdf&embedded=true#pagemode=none" allowfullscreen></iframe>
+      <embed src="assets/SMB%20RCE%20Vuln%20Report.pdf" class="pdf-embed" type="application/pdf">
       <p class="download"><a href="assets/SMB%20RCE%20Vuln%20Report.pdf" download>Download PDF</a></p>
     </div>
 
     <!-- 7 -->
     <div class="doc">
       <h2>Windows Triage 3 Report</h2>
-      <iframe src="/pdfjs/web/viewer.html?file=https://marty-schneider.github.io/assets/Windows%20Triage%203%20Report.pdf&embedded=true#pagemode=none" allowfullscreen></iframe>
+      <embed src="assets/Windows%20Triage%203%20Report.pdf" class="pdf-embed" type="application/pdf">
       <p class="download"><a href="assets/Windows%20Triage%203%20Report.pdf" download>Download PDF</a></p>
     </div>
   </div>
-
-  <!-- ESM PDF.js (Modern, .mjs) -->
-  <script type="module">
-    import * as pdfjsLib from '/pdfjs/build/pdf.mjs';
-    pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdfjs/build/pdf.worker.mjs';
-  </script>
 </body>
 </html>
