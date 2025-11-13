@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; background: #f9f9fb; }
+    h1 { text-align: center; color: #2c3e50; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .doc { margin: 3rem 0; }
+    .doc h2 { margin-bottom: 0.5rem; color: #2c3e50; }
+    iframe { width: 100%; height: 700px; border: 1px solid #ddd; border-radius: 8px; }
+    .download { text-align: center; margin-top: 0.5rem; }
+    .download a { color: #3498db; text-decoration: none; }
+    .download a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Portfolio</h1>
+
+    <!-- RESUME PDF -->
+    <div class="doc">
+      <h2>Resume</h2>
+      <iframe 
+        src="https://cdn.jsdelivr.net/npm/pdfjs-dist@4.7.76/viewer.html?file=assets/Resume.pdf#pagemode=none"
+        allowfullscreen>
+      </iframe>
+      <p class="download">
+        <a href="assets/Resume.pdf" download>Download PDF</a>
+      </p>
+    </div>
+
+    <!-- COVER LETTER PDF (converted from .docx) -->
+    <div class="doc">
+      <h2>Cover Letter</h2>
+      <iframe 
+        src="https://cdn.jsdelivr.net/npm/pdfjs-dist@4.7.76/viewer.html?file=assets/Cover%20Letter.pdf#pagemode=none"
+        allowfullscreen>
+      </iframe>
+      <p class="download">
+        <a href="assets/Cover%20Letter.pdf" download>Download PDF</a> | 
+        <a href="assets/Cover%20Letter.docx" download>Download DOCX</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
