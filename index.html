@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Marty Schneider | Cybersecurity Portfolio</title>
   <style>
-    body { font-family: system-ui, sans-serif; margin: 2rem; background: #f9f9fb; }
-    h1 { text-align: center; color: #2c3e50; }
-    .intro { text-align:center; max-width:700px; margin:0 auto 3rem; color:#555; font-size:1.1rem; }
-    .container { max-width: 900px; margin: 0 auto; }
-    .doc { margin: 3rem 0; }
-    .doc h2 { margin-bottom: 0.5rem; color: #2c3e50; }
-    iframe { width: 100%; height: 700px; border: 1px solid #ddd; border-radius: 8px; }
-    .download { text-align: center; margin-top: 0.5rem; }
-    .download a { color: #3498db; text-decoration: none; }
-    .download a:hover { text-decoration: underline; }
+    body {font-family:system-ui,sans-serif;margin:2rem;background:#f9f9fb;}
+    h1 {text-align:center;color:#2c3e50;}
+    .intro {text-align:center;max-width:700px;margin:0 auto 3rem;color:#555;font-size:1.1rem;}
+    .container {max-width:900px;margin:0 auto;}
+    .doc {margin:3rem 0;}
+    .doc h2 {margin-bottom:.5rem;color:#2c3e50;}
+    iframe {width:100%;height:720px;border:1px solid #ddd;border-radius:8px;}
+    .download {text-align:center;margin-top:.5rem;}
+    .download a {color:#3498db;text-decoration:none;}
+    .download a:hover {text-decoration:underline;}
   </style>
 </head>
 <body>
@@ -24,50 +24,62 @@
       <strong>Cybersecurity Analyst</strong><br>
       DFIR • Threat Intelligence • Malware Analysis • Network Forensics
     </p>
+
     <!-- 1 -->
     <div class="doc">
       <h2>Alerts to Adversaries - Capstone Report</h2>
-      <iframe src="pdfjs/web/viewer.html?file=../assets/Alerts%20to%20Adversaries%20-%20Capstone%20Report.pdf#pagemode=none" allowfullscreen></iframe>
+      <iframe src="/pdfjs/web/viewer.html?file=/assets/Alerts%20to%20Adversaries%20-%20Capstone%20Report.pdf#pagemode=none" allowfullscreen></iframe>
       <p class="download"><a href="assets/Alerts%20to%20Adversaries%20-%20Capstone%20Report.pdf" download>Download PDF</a></p>
     </div>
+
     <!-- 2 -->
     <div class="doc">
       <h2>CTI Scenario 3 Marty Schneider</h2>
-      <iframe src="pdfjs/web/viewer.html?file=../assets/CTI%20Scenario%203%20Marty%20Schneider.pdf#pagemode=none" allowfullscreen></iframe>
+      <iframe src="/pdfjs/web/viewer.html?file=/assets/CTI%20Scenario%203%20Marty%20Schneider.pdf#pagemode=none" allowfullscreen></iframe>
       <p class="download"><a href="assets/CTI%20Scenario%203%20Marty%20Schneider.pdf" download>Download PDF</a></p>
     </div>
+
     <!-- 3 -->
     <div class="doc">
       <h2>Group Log Analytics Challenge 2</h2>
-      <iframe src="pdfjs/web/viewer.html?file=../assets/Group%20Log%20Analytics%20Challenge%202.pdf#pagemode=none" allowfullscreen></iframe>
+      <iframe src="/pdfjs/web/viewer.html?file=/assets/Group%20Log%20Analytics%20Challenge%202.pdf#pagemode=none" allowfullscreen></iframe>
       <p class="download"><a href="assets/Group%20Log%20Analytics%20Challenge%202.pdf" download>Download PDF</a></p>
     </div>
+
     <!-- 4 -->
     <div class="doc">
       <h2>MyDoom CTI</h2>
-      <iframe src="pdfjs/web/viewer.html?file=../assets/MyDoom%20CTI.pdf#pagemode=none" allowfullscreen></iframe>
+      <iframe src="/pdfjs/web/viewer.html?file=/assets/MyDoom%20CTI.pdf#pagemode=none" allowfullscreen></iframe>
       <p class="download"><a href="assets/MyDoom%20CTI.pdf" download>Download PDF</a></p>
     </div>
+
     <!-- 5 -->
     <div class="doc">
       <h2>Network Challenge 1 Report Marty Schneider</h2>
-      <iframe src="pdfjs/web/viewer.html?file=../assets/Network%20Challenge%201%20Report%20Marty%20Schneider.pdf#pagemode=none" allowfullscreen></iframe>
+      <iframe src="/pdfjs/web/viewer.html?file=/assets/Network%20Challenge%201%20Report%20Marty%20Schneider.pdf#pagemode=none" allowfullscreen></iframe>
       <p class="download"><a href="assets/Network%20Challenge%201%20Report%20Marty%20Schneider.pdf" download>Download PDF</a></p>
     </div>
+
     <!-- 6 -->
     <div class="doc">
       <h2>SMB RCE Vuln Report</h2>
-      <iframe src="pdfjs/web/viewer.html?file=../assets/SMB%20RCE%20Vuln%20Report.pdf#pagemode=none" allowfullscreen></iframe>
+      <iframe src="/pdfjs/web/viewer.html?file=/assets/SMB%20RCE%20Vuln%20Report.pdf#pagemode=none" allowfullscreen></iframe>
       <p class="download"><a href="assets/SMB%20RCE%20Vuln%20Report.pdf" download>Download PDF</a></p>
     </div>
+
     <!-- 7 -->
     <div class="doc">
       <h2>Windows Triage 3 Report</h2>
-      <iframe src="pdfjs/web/viewer.html?file=../assets/Windows%20Triage%203%20Report.pdf#pagemode=none" allowfullscreen></iframe>
+      <iframe src="/pdfjs/web/viewer.html?file=/assets/Windows%20Triage%203%20Report.pdf#pagemode=none" allowfullscreen></iframe>
       <p class="download"><a href="assets/Windows%20Triage%203%20Report.pdf" download>Download PDF</a></p>
     </div>
   </div>
-  <!-- Load PDF.js core (add this before closing </body>) -->
-  <script src="pdfjs/build/pdf.js"></script>
+
+  <script src="/pdfjs/build/pdf.js"></script>
+  <script>
+    if (typeof pdfjsLib !== 'undefined') {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdfjs/build/pdf.worker.js';
+    }
+  </script>
 </body>
 </html>
